@@ -1,0 +1,8 @@
+<h2>Add champion</h2>
+
+<form [formGroup]="championForm" (ngSubmit)="add()">
+  <input formControlName="name" placeholder="name">
+  <input formControlName="mastery" placeholder="mastery">
+  <input formControlName="describe" placeholder="describe">
+  <button type="submit">add</button>
+</form>

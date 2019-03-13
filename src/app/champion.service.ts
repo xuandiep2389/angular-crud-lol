@@ -14,7 +14,13 @@ export class ChampionService {
   private championURL = 'http://localhost:3000/champions';
   constructor(private http: HttpClient) { }
 
+  //tra ve observable cua champion
   getChampions(): Observable<Champion[]> {
     return this.http.get<Champion[]>(this.championURL)
+  }
+
+
+  add(champion: Champion): Observable<Champion> {
+    return this.http.post<Champion>(this.championURL, champion)
   }
 }
