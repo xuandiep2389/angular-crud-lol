@@ -1,0 +1,17 @@
+<h2>Champion management</h2>
+
+<table border="1">
+  <tr>
+    <td>id</td>
+    <td>name</td>
+    <td>mastery</td>
+    <td>describe</td>
+
+  </tr>
+  <tr *ngFor="let champ of champions">
+    <td>{{champ.id}}</td>
+    <td>{{champ.name}}</td>
+    <td>{{champ.mastery}}</td>
+    <td>{{champ.describe}}</td>
+  </tr>
+</table>
